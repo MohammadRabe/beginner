@@ -1,4 +1,6 @@
 using System.Threading.Tasks;
+namespace Task1
+{
 internal class Program
 {
     public static async Task Main(string[] args)
@@ -13,8 +15,6 @@ internal class Program
         await Task.Delay(3000);
         return 100;
     }
-    
-
-    
-
 }  
+
+}
