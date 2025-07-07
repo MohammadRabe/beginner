@@ -87,12 +87,12 @@ public class TempAlert : Alert
 public abstract class SmartManger
 {
     public List<SmartDevice> devices = new List<SmartDevice>();
-
+    public abstract void AddDevice(SmartDevice device);
 }
 public class SmartHomeManager : SmartManger
 {
 
-    public void AddDevice(SmartDevice device)
+    public override void AddDevice(SmartDevice device)
     {
         devices.Add(device);
     }
